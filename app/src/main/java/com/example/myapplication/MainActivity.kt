@@ -8,15 +8,15 @@ import android.view.View
 import android.widget.Button
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
-    private lateinit var btnIntent1: Button
-    private lateinit var btnIntent2: Button
+    private lateinit var signIn: Button
+    private lateinit var signUp: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        btnIntent1 = findViewById(R.id.btn_signin)
-        btnIntent2 = findViewById(R.id.btn_signup)
-        btnIntent1.setOnClickListener(this)
-        btnIntent2.setOnClickListener(this)
+        signIn = findViewById(R.id.btn_signin)
+        signUp = findViewById(R.id.btn_signup)
+        signIn.setOnClickListener(this)
+        signUp.setOnClickListener(this)
     }
     override fun onClick(v: View) {
         when(v.id) {
