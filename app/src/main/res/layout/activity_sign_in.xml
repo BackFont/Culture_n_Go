@@ -48,7 +48,7 @@
         app:layout_constraintVertical_bias="0.092" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/Username"
         android:layout_width="wrap_content"
         android:layout_height="36dp"
         android:layout_marginTop="14dp"
@@ -75,7 +75,7 @@
         app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintBottom_toTopOf="@id/password_edit"
         app:layout_constraintStart_toStartOf="@+id/view2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/Username" />
 
     <EditText
         android:id="@+id/password_edit"
@@ -95,6 +95,7 @@
         app:layout_constraintTop_toBottomOf="@+id/password" />
 
     <Button
+        android:id="@+id/btn_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="14dp"

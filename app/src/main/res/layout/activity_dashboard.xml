@@ -6,8 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FDEEDC"
-    tools:context=".MainActivity"
-    tools:ignore="HardcodedText">
+    tools:context=".Dashboard">
 
     <View
         android:id="@+id/view"
@@ -34,15 +33,15 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:gravity="center_horizontal"
         android:letterSpacing="0.025"
-        android:text="GEEKSFORGEEKS"
+        android:text="CULTURE N GO!!"
         android:textColor="@color/white"
         android:textSize="28sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/backB"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
@@ -107,12 +106,13 @@
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
                 android:text="EDIT PROFILE"
                 android:textColor="#90B77D"
                 app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.912"
-                tools:layout_editor_absoluteX="16dp" />
+                app:layout_constraintVertical_bias="0.912" />
 
             <ImageButton
                 android:id="@+id/profileB"
@@ -375,7 +375,7 @@
                     android:id="@+id/image_view23"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/help"
+
                     app:layout_constraintBottom_toTopOf="@+id/textView23"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
@@ -389,7 +389,7 @@
                     android:gravity="center"
                     android:text="HELP"
                     android:textAllCaps="true"
-                    android:textColor="@color/green_500"
+                    android:textColor="#90B77D"
                     android:textSize="14sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -422,7 +422,7 @@
                     android:id="@+id/image_view"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/settings"
+
                     app:layout_constraintBottom_toTopOf="@+id/textView4"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
@@ -436,7 +436,7 @@
                     android:gravity="center"
                     android:text="SETTINGS"
                     android:textAllCaps="true"
-                    android:textColor="@color/green_500"
+                    android:textColor="#90B77D"
                     android:textSize="14sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
