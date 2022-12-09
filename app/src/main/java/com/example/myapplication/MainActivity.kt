@@ -20,14 +20,14 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(v: View) {
         when(v.id) {
             R.id.btn_signin -> {
-                val masuk = Intent(this@MainActivity, sign_in::class.java)
-                startActivity(masuk)
+                val signin = Intent(this@MainActivity, sign_in::class.java)
+                startActivity(signin)
             }
         }
         when(v.id) {
             R.id.btn_signup -> {
-                val masuk = Intent(this@MainActivity, SignUpActivity::class.java)
-                startActivity(masuk)
+                val signup = Intent(this@MainActivity, SignUpActivity::class.java)
+                startActivity(signup)
             }
         }
     }

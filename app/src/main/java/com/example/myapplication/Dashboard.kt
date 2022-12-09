@@ -5,14 +5,17 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.ImageButton
+import androidx.cardview.widget.CardView
+import com.google.android.material.button.MaterialButton
 
 class Dashboard : AppCompatActivity(), View.OnClickListener {
-    private lateinit var logout: Button
-    private lateinit var editPro: Button
-    private lateinit var wayang: Button
-    private lateinit var reog: Button
-    private lateinit var sekaten: Button
-    private lateinit var borobudur: Button
+    private lateinit var logout: ImageButton
+    private lateinit var editPro: MaterialButton
+    private lateinit var wayang: CardView
+    private lateinit var reog: CardView
+    private lateinit var sekaten: CardView
+    private lateinit var borobudur: CardView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard)
