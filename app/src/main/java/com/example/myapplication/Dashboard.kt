@@ -33,41 +33,41 @@ class Dashboard : AppCompatActivity(), View.OnClickListener {
         borobudur.setOnClickListener(this)
     }
     override fun onClick(v: View) {
-//        when(v.id) {
-//            R.id.logOutB -> {
-//                val keluar = Intent(this@Dashboard, MainActivity::class.java)
-//                startActivity(keluar)
-//            }
-//        }
-//        when(v.id) {
-//            R.id.editProfileB -> {
-//                val edit = Intent(this@Dashboard, SignUpActivity::class.java)
-//                startActivity(edit)
-//            }
-//        }
-//        when(v.id) {
-//            R.id.wayangCard -> {
-//                val Vwayang = Intent(this@Dashboard, MenuBudaya::class.java)
-//                startActivity(Vwayang)
-//            }
-//        }
-//        when(v.id) {
-//            R.id.sekatenCard -> {
-//                val Vsekaten = Intent(this@Dashboard, SignUpActivity::class.java)
-//                startActivity(Vsekaten)
-//            }
-//        }
-//        when(v.id) {
-//            R.id.borobudurCard -> {
-//                val Vborobudur = Intent(this@Dashboard, MainActivity::class.java)
-//                startActivity(Vborobudur)
-//            }
-//        }
-//        when(v.id) {
-//            R.id.reogCard -> {
-//                val Vreog = Intent(this@Dashboard, SignUpActivity::class.java)
-//                startActivity(Vreog)
-//            }
-//        }
+        when(v.id) {
+            R.id.logOutB -> {
+                val keluar = Intent(this@Dashboard, MainActivity::class.java)
+                startActivity(keluar)
+            }
+        }
+        when(v.id) {
+            R.id.editProfileB -> {
+                val edit = Intent(this@Dashboard, SignUpActivity::class.java)
+                startActivity(edit)
+            }
+        }
+        when(v.id) {
+            R.id.wayangCard -> {
+                val Vwayang = Intent(this@Dashboard, MenuBudaya::class.java)
+                startActivity(Vwayang)
+            }
+        }
+        when(v.id) {
+            R.id.sekatenCard -> {
+                val Vsekaten = Intent(this@Dashboard, SignUpActivity::class.java)
+                startActivity(Vsekaten)
+            }
+        }
+        when(v.id) {
+            R.id.borobudurCard -> {
+                val Vborobudur = Intent(this@Dashboard, MainActivity::class.java)
+                startActivity(Vborobudur)
+            }
+        }
+        when(v.id) {
+            R.id.reogCard -> {
+                val Vreog = Intent(this@Dashboard, SignUpActivity::class.java)
+                startActivity(Vreog)
+            }
+        }
     }
 }
