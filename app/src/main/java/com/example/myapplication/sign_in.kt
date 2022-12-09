@@ -32,7 +32,7 @@ class sign_in : AppCompatActivity(){
                 etPassword.text.toString().equals(password)){
                 Toast.makeText(this,"Login berhasil", Toast.LENGTH_SHORT).show()
                 val intent = Intent(this@sign_in, Dashboard::class.java)
-                startActivity(intent)
+                this@sign_in.startActivity(intent)
             }
             else{//aksi jika email atau password tidak sesuai
                 Toast.makeText(this,"Login gagal", Toast.LENGTH_SHORT).show()
