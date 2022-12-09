@@ -28,8 +28,8 @@ class sign_in : AppCompatActivity(){
                 etPassword.text.isEmpty()){
                 Toast.makeText(this,"Isi data pengguna dengan benar", Toast.LENGTH_SHORT).show()
             }
-            else if(etEmail.text.equals(email)&&// aksi jika email dan password sesuai
-                etPassword.text.equals(password)){
+            else if(etEmail.text.toString().equals(email)&&// aksi jika email dan password sesuai
+                etPassword.text.toString().equals(password)){
                 Toast.makeText(this,"Login berhasil", Toast.LENGTH_SHORT).show()
                 val intent = Intent(this@sign_in, Dashboard::class.java)
                 this@sign_in.startActivity(intent)
