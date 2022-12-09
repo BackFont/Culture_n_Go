@@ -1,6 +1,5 @@
 package com.example.myapplication
 
-import android.app.AlertDialog
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -10,7 +9,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 
-class sign_in : AppCompatActivity(), View.OnClickListener {
+class sign_in : AppCompatActivity(){
     private lateinit var etEmail:EditText
     private lateinit var etPassword:EditText
     private lateinit var btLoginSubmit:Button
@@ -32,18 +31,21 @@ class sign_in : AppCompatActivity(), View.OnClickListener {
             else if(etEmail.text.toString().equals(email)&&// aksi jika email dan password sesuai
                 etPassword.text.toString().equals(password)){
                 Toast.makeText(this,"Login berhasil", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this@sign_in, Dashboard::class.java)
+                startActivity(intent)
+                finish()
             }
             else{//aksi jika email atau password tidak sesuai
                 Toast.makeText(this,"Login gagal", Toast.LENGTH_SHORT).show()
             }
         })
     }
-    override fun onClick(v: View) {
-        when (v.id) {
-            R.id.btn_login -> {
-                val masuk = Intent(this@sign_in, Dashboard::class.java)
-                startActivity(masuk)
-            }
-        }
-    }
+//    override fun onClick(v: View) {
+//        when (v.id) {
+//            R.id.btn_login -> {
+//                val masuk = Intent(this@sign_in, Dashboard::class.java)
+//                startActivity(masuk)
+//            }
+//        }
+//    }
 }
