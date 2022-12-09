@@ -45,12 +45,12 @@ class Dashboard : AppCompatActivity(), View.OnClickListener {
 //                startActivity(edit)
 //            }
 //        }
-//        when(v.id) {
-//            R.id.wayangCard -> {
-//                val Vwayang = Intent(this@Dashboard, MenuBudaya::class.java)
-//                startActivity(Vwayang)
-//            }
-//        }
+        when(v.id) {
+            R.id.wayangCard -> {
+                val Vwayang = Intent(this@Dashboard, MenuBudaya::class.java)
+                startActivity(Vwayang)
+            }
+        }
 //        when(v.id) {
 //            R.id.sekatenCard -> {
 //                val Vsekaten = Intent(this@Dashboard, SignUpActivity::class.java)
